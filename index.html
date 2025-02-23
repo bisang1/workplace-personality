@@ -5,15 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>직장인 성격유형 테스트</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div id="start-page">
-            <h1>나의 직장 성격유형 테스트</h1>
-            <p>20개의 질문으로 알아보는 당신의 직장 성격유형!</p>
-            <button onclick="startTest()">테스트 시작하기</button>
+            <div class="test-header">
+                <div class="emoji-decoration">
+                    💼 👔 💪 💡 
+                </div>
+                <h1>나의 직장 성격유형 테스트</h1>
+                <div class="emoji-decoration">
+                    ✨ 📊 🎯 ⭐
+                </div>
+            </div>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span class="feature-icon">⏱️</span>
+                    <p>소요시간 3분</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📝</span>
+                    <p>20개 질문</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎨</span>
+                    <p>5가지 성격유형</p>
+                </div>
+            </div>
+
+            <div class="description">
+                <p class="main-desc">20개의 질문으로 알아보는 당신의 직장 성격유형!</p>
+                <p class="sub-desc">나는 어떤 직장인일까? 🤔</p>
+            </div>
+
+            <button class="start-button" onclick="startTest()">
+                테스트 시작하기
+                <span class="button-icon">→</span>
+            </button>
+
+            <div class="participants">
+                <p>현재 <span class="highlight">1,234</span>명이 참여했어요!</p>
+            </div>
         </div>
 
+        <!-- 질문 페이지 -->
         <div id="question-page" style="display: none;">
             <div id="progress-bar">
                 <div id="progress"></div>
@@ -28,6 +65,7 @@
             </div>
         </div>
 
+        <!-- 결과 페이지 -->
         <div id="result-page" style="display: none;">
             <h2>당신의 직장 성격유형은...</h2>
             <div id="result-type"></div>
@@ -44,4 +82,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
