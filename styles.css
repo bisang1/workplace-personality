@@ -1,97 +1,68 @@
-:root {
-    --primary-color: #2D3142;
-    --text-light: #ffffff;
-    --background-color: #fff5f7;
-}
-
-.container {
-    max-width: 800px;
-    width: 90%;
-    background-color: white;
-    border-radius: 20px;
-    padding: 40px;
-    margin: 20px auto;
-}
-
-h1 {
-    color: #4A4A4A;
-    font-size: 2.4em;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.section-subtitle {
-    color: #4A4A4A;
-    font-size: 1.2em;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.feature-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .feature-box {
-    background-color: var(--primary-color);
-    color: var(--text-light);
+    border: 2px solid #FF0000;  /* 빨간색 테두리 */
+    background-color: #F8F9FF;  /* 연한 배경색 */
+    color: #333333;  /* 텍스트 색상을 어두운 색으로 변경 */
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .feature-box h3 {
-    font-size: 1.2em;
-    margin: 0 0 10px 0;
-    color: var(--text-light);
+    font-size: 1.3em;
+    margin: 0 0 15px 0;
+    color: #4B5BA6;  /* 제목 색상을 파란색 계열로 변경 */
 }
 
 .feature-box p {
     margin: 0;
     line-height: 1.6;
     font-size: 1em;
+    color: #666666;  /* 설명 텍스트 색상 */
 }
 
-.test-info {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.test-info p {
-    margin: 5px 0;
-    color: #4A4A4A;
-}
-
+/* 테스트 시작하기 버튼 스타일 수정 */
 .start-button {
-    background-color: #f0f0f0;
-    color: #4A4A4A;
+    background-color: #4B5BA6;  /* 버튼 배경색을 파란색으로 변경 */
+    color: white;
     border: none;
-    padding: 15px 30px;
-    border-radius: 25px;
+    padding: 15px 40px;
+    border-radius: 10px;
     font-size: 1.1em;
     cursor: pointer;
-    margin: 20px auto;
+    margin: 30px auto;
     display: block;
     transition: all 0.3s ease;
 }
 
 .start-button:hover {
-    background-color: #e0e0e0;
+    background-color: #3A4A8C;  /* 호버 시 더 진한 파란색 */
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
-        width: 95%;
-    }
+/* 제목 스타일 수정 */
+h1 {
+    color: #4B5BA6;
+    font-size: 2.4em;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-    .feature-box {
-        padding: 20px;
-    }
+.section-subtitle {
+    color: #666666;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-    h1 {
-        font-size: 2em;
-    }
+/* 추가 정보 텍스트 스타일 */
+.test-info {
+    text-align: center;
+    margin: 30px 0;
+    color: #4B5BA6;
+    font-size: 1.1em;
+}
+
+.test-info p {
+    margin: 5px 0;
 }
